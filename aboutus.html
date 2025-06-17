@@ -1,59 +1,180 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Berry life about us</title>
-        <link rel="stylesheet" href="css/alteration.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | Berry Life Beauty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --main-bg: #dda9f5;
+      --primary: #ca58ff;
+      --primary-dark: #a43dff;
+      --text-dark: #490468;
+      --text-hover: #c760f7;
+      --text-light: #ffffff;
+      --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 
-    </head>
-    <body>
-        <h1>About us</h1>
-        <header>
-            <nav  class="navbar">  
-               
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About us</a></li>
-                        <li> <a href="services.html">Services</a></li>
-                        <li> <a href="enquiry.html">Enquiry</a></li>
-                        <li><a href="contactus.html">Contact us</a></li>
-                    </ul>
-                  </div>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-            </nav>
-     </header>
-       <br>
-       <br>
-        
-        <p>Welcome to Berry Life Beauty, where the vibrant hues of nature’s sweetest treasures  
-            
-            inspire every product we create.<br>Our brand is dedicated to capturing the rich, luscious 
-            colors of berries—strawberries, <br>
-            raspberries, blueberries and more—to bring you a beauty
-             collection that enhances your natural glow.</p>
-             <br>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
 
-          <p>From silky blushes and radiant highlighters to bold lipsticks and 
-            shimmering glosses, each p is carefully crafted to deliver rich pigmentation,<br> 
-            
-            blendable formulas, and long-lasting wear.<br> We believe beauty should feel as fresh 
-            and effortless as picking berries on a ,summer day, which is why our products are
-             designed to complement all skin tones and styles.</p>
-             <br>
-            
-         <p> At Berry Life Beauty, we celebrate the power of color, confidence, and 
-            
-            self-expression.<br>Whether you're going for a soft, natural flush or a bold,
-            statement look, our berry-inspired shades will help you create the perfect vibe.<br>
-            
-            Indulge in beauty, inspired by nature.<br> Berry Life Beauty—where color comes to life.</p>
+    h1 {
+      color: var(--text-dark);
+      text-align: center;
+      font-size: 2.5rem;
+      background-color: var(--primary);
+      border: 6px solid var(--primary-dark);
+      border-radius: 30px;
+      text-shadow: 3px 3px 5px var(--primary-dark);
+      padding: 15px;
+      margin: 30px auto;
+      width: 80%;
+    }
 
+    nav.navbar {
+      background-color: var(--primary);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
 
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
 
+    nav ul li a {
+      text-decoration: none;
+      color: #330249;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
 
+    nav ul li a:hover {
+      background-color: var(--text-hover);
+      color: var(--text-light);
+    }
 
-</P>
-<div><img src="images/berry.jpgss" style="height: 450px;"></div>
-       
-    </body>
+    .text-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .text-section p {
+      margin-bottom: 25px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--primary);
+      color: var(--text-light);
+      padding: 20px;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      .text-section {
+        padding: 0 15px;
+      }
+
+      .image-container img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>About Us</h1>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="text-section">
+    <p>
+      Welcome to <strong>Berry Life Beauty</strong>, where the vibrant hues of nature’s sweetest treasures inspire every product we create.
+      Our brand is dedicated to capturing the rich, luscious colors of berries—strawberries, raspberries, blueberries and more—
+      to bring you a beauty collection that enhances your natural glow.
+    </p>
+
+    <p>
+      From silky blushes and radiant highlighters to bold lipsticks and shimmering glosses, each piece is carefully crafted to deliver rich pigmentation,
+      blendable formulas, and long-lasting wear.
+      We believe beauty should feel as fresh and effortless as picking berries on a summer day—
+      which is why our products are designed to complement all skin tones and styles.
+    </p>
+
+    <p>
+      At <strong>Berry Life Beauty</strong>, we celebrate the power of color, confidence, and self-expression.
+      Whether you're going for a soft, natural flush or a bold, statement look,
+      our berry-inspired shades will help you create the perfect vibe.<br>
+      Indulge in beauty, inspired by nature.
+    </p>
+  </main>
+
+  <div class="image-container">
+    <img src="images/berry.jpg" alt="Berry Life Products">
+  </div>
+
+  <footer>
+    &copy; 2025 Berry Life Beauty. All rights reserved.
+  </footer>
+
+</body>
 </html>

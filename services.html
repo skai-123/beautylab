@@ -1,87 +1,200 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Services</title>
-        <link rel="stylesheet" href="css/alteration.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | Berry Life Beauty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --main-bg: #dda9f5;
+      --primary: #ca58ff;
+      --primary-dark: #a43dff;
+      --text-dark: #490468;
+      --text-light: #ffffff;
+      --text-hover: #c760f7;
+      --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 
-    </head>
-    <body>
-        <h1>Services</h1>
-       <header>
-            <nav  class="navbar">  
-        
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="aboutus.html">About us</a></li>
-                        <li> <a href="services.html">Services</a></li>
-                        <li> <a href="enquiry.html">Enquiry</a></li>
-                        <li><a href="contactus.html">Contact us</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <div style="float: right; margin-left: 60px;">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-            <img src="images/palet1.jpg" style="height: 500px; ">
-        </div>
-        
-    </body>
-               <br>
-               <br>
-                <p>At Berry Life Beauty, we offer more than just high-quality makeup products.<br>we provide the tools,
-                     inspiration, and guidance to help you create stunning looks that express your individuality.<br> Our
-                      berry-inspired collection includes everything from blushes to lip glosses<br> and we’re here to help you make
-                       the most of them. </p>
-                    
-                       
-                <b><p> Here’s how we can serve you:</p></b>
-                
-             <p> Exclusive Berry Life Beauty Products</p>
-             <p> Discover our premium collection of berry-inspired beauty products, carefully crafted<br>
-                 to bring out the best in you. From vibrant blushes and stunning eyeshadows to smooth<br> lip liners, 
-                 lipsticks, and lip glosses, we have everything you need to complete your <br>perfect look. Each product 
-                 is designed to deliver bold color, long-lasting wear, and <br>flawless application—whether you’re creating an
-                  everyday look or something a little more dramatic.</p>
-                
-             <p> <nav> <li> Blushes that add the perfect flush to your cheeks.</li>
-                
-               <li> Eyeshadows that create depth and dimension with rich, berry-inspired shades.</li>
-                
-                <li> Lip Liners, Lipsticks, & Lip Glosses for bold, beautiful, and kissable lips.</li></nav>
-            </p>
-                
-              <b> <p> Step-by-Step Makeup Tutorials</p></b>
-               <p> Not sure how to use your new Berry Life Beauty products? We’ve got you covered! <br>
-                Our step-by-step makeup tutorials are designed to guide you through various looks, <br>from fresh-faced everyday
-                 glam to bold evening styles.<br> Whether you want to learn how to perfect a smoky eye or create the perfect
-                  berry-toned lip<br>
-                 , our tutorials will help you every step of the way.</p>
-                
-                <nav><li>Beginner-Friendly Guides: For those just starting to experiment with makeup.</li>
-                
-               <li>Advanced Tutorials: For seasoned beauty lovers who want to elevate their skills.</li>
-                
-                <li>Seasonal Looks: Find the best looks to suit the seasons, like soft<br> berry blushes for 
-                spring or bold berry lips for winter.</li> </nav>
-                
-<b><p>Product Customization.</p></b>
-                <p>We know that beauty is personal, which is why we offer customized beauty solutions.<br> 
-                Select the best shades, textures, and finishes that match your unique preferences.<br> 
-                Our product customization service allows you to create the perfect berry-inspired set tailored just<br>
-                for you, whether it's a curated lip collection or a bespoke eyeshadow palette.</p>
-                
-</p>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
 
-            </nav>
-     </header>
-   
-        
-    </body>
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      background-color: var(--primary);
+      border: 6px solid var(--primary-dark);
+      border-radius: 30px;
+      text-shadow: 3px 3px 5px var(--primary-dark);
+      padding: 15px;
+      margin: 30px auto;
+      width: 80%;
+    }
+
+    nav.navbar {
+      background-color: var(--primary);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #330249;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--text-hover);
+      color: var(--text-light);
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .content .text-section {
+      flex: 1 1 500px;
+    }
+
+    .content img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+      object-fit: cover;
+      height: auto;
+    }
+
+    .text-section p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    .text-section h2 {
+      font-size: 1.3rem;
+      margin-top: 25px;
+      color: var(--primary-dark);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--primary);
+      color: var(--text-light);
+      padding: 20px;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Services</h1>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="text-section">
+      <p>
+        At <strong>Berry Life Beauty</strong>, we offer more than just high-quality makeup products—we provide the tools, inspiration, and guidance to help you create stunning looks that express your individuality.
+        Our berry-inspired collection includes everything from blushes to lip glosses, and we’re here to help you make the most of them.
+      </p>
+
+      <h2>Here’s how we can serve you:</h2>
+
+      <h2>Exclusive Berry Life Beauty Products</h2>
+      <p>
+        Discover our premium collection of berry-inspired beauty products, carefully crafted to bring out the best in you. From vibrant blushes and stunning eyeshadows to smooth lip liners, lipsticks, and lip glosses, we have everything you need to complete your perfect look. Each product is designed to deliver bold color, long-lasting wear, and flawless application.
+      </p>
+      <ul>
+        <li>Blushes that add the perfect flush to your cheeks.</li>
+        <li>Eyeshadows with rich, berry-inspired shades.</li>
+        <li>Lip Liners, Lipsticks & Glosses for bold, kissable lips.</li>
+      </ul>
+
+      <h2>Step-by-Step Makeup Tutorials</h2>
+      <p>
+        Not sure how to use your new Berry Life Beauty products? We’ve got you covered! Our tutorials guide you from fresh everyday looks to bold evening glam.
+      </p>
+      <ul>
+        <li><strong>Beginner-Friendly:</strong> Perfect for makeup newcomers.</li>
+        <li><strong>Advanced:</strong> Level up with expert techniques.</li>
+        <li><strong>Seasonal Styles:</strong> Spring blushes or winter berry lips.</li>
+      </ul>
+
+      <h2>Product Customization</h2>
+      <p>
+        We know that beauty is personal, which is why we offer customized beauty solutions. Choose shades, textures, and finishes that match your preferences. Create your perfect berry-inspired set, whether it’s a curated lip kit or a custom eyeshadow palette.
+      </p>
+    </div>
+
+    <div>
+      <img src="images/palet1.jpg" alt="Makeup Palette">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Berry Life Beauty. All rights reserved.
+  </footer>
+
+</body>
 </html>

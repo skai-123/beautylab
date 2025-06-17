@@ -1,55 +1,180 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Berry life contact us</title> 
-        <link rel="stylesheet" href="css/alteration.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Berry Life | Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --main-bg: #dda9f5;
+      --primary: #ca58ff;
+      --primary-dark: #a43dff;
+      --text-dark: #490468;
+      --text-hover: #c760f7;
+      --text-light: #ffffff;
+      --link-hover-bg: #c760f7;
+      --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 
-    </head>
-    <body>
-       <h1>Contact us</h1>
-        <header>
-            <nav  class="navbar">  
-               
-              <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutus.html">About us</a></li>
-                    <li> <a href="services.html">Services</a></li>
-                    <li> <a href="enquiry.html">Enquiry</a></li>
-                    <li><a href="contactus.html">Contact us</a></li>
-                </ul>
-              </div>
-               
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-            </nav>
-          </header>     
-     <div style="float: right;"><br>
-      <br>
-      <br>
-      <img src="images/lipstick2.jpg" style="height: 450px;"></div>
-     <br>
-     <p>
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+      background-color: var(--main-bg);
+      line-height: 1.6;
+      color: var(--text-dark);
+    }
 
-        We'd love to hear from you!<br> Whether you have a question about our products, need assistance with an order, or just want to share your feedback, our team is here to help.
-        
-       <br> <br><b>Get in Touch:</b>
-    
-        <p>Email:berrylifebeauty@gmail.com<br>
-        Phone: (015) 456-7890<br>
-        Monday - Friday: 9:00 AM - 6:00 PM (EST)</p>
-         <p>2 Contact form</p>
-        
-        <P><b>Social Media:</b><br>
-        Follow us on: Instagram,Facebook,Twitter<br>
-       Instagram: @berry-life-beauty<br>
-        Facebook: berry-life-beauty<br>
-        Twitter: @berry-life-beauty</P>
-        
-      <p><b> Visit Us:</b>
-        <br>
-        If you're in the area, feel free to stop by our store<br>
-        Address:church street , Polokwane, Plk 1089</p>
-        </p
-         
-    </body>
+    h1 {
+      color: var(--text-dark);
+      text-align: center;
+      font-size: 2.5rem;
+      background-color: var(--primary);
+      border: 6px solid var(--primary-dark);
+      border-radius: 30px;
+      text-shadow: 3px 3px 5px var(--primary-dark);
+      padding: 15px;
+      margin: 30px auto;
+      width: 80%;
+    }
+
+    nav.navbar {
+      background-color: var(--primary);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-start;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #330249;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--link-hover-bg);
+      color: var(--text-light);
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .text-section {
+      font-size: 1rem;
+    }
+
+    .text-section p {
+      margin-bottom: 20px;
+    }
+
+    .image-section {
+      text-align: center;
+    }
+
+    .image-section img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--primary);
+      color: white;
+      padding: 20px;
+      font-size: 1rem;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section class="text-section">
+      <p><strong>We'd love to hear from you!</strong><br />
+        Whether you have a question about our products, need assistance with an order, or just want to share your feedback,
+        our team is here to help.
+      </p>
+
+      <p><strong>Get in Touch:</strong><br />
+        <strong>Email:</strong> berrylifebeauty@gmail.com<br />
+        <strong>Phone:</strong> (015) 456-7890<br />
+        <strong>Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM (EST)
+      </p>
+
+      <p><strong>Social Media:</strong><br />
+        Instagram: @berry-life-beauty<br />
+        Facebook: berry-life-beauty<br />
+        Twitter: @berry-life-beauty
+      </p>
+
+      <p><strong>Visit Us:</strong><br />
+        Address: Church Street, Polokwane, PLK 1089
+      </p>
+    </section>
+
+    <section class="image-section">
+      <img src="images/lipstick2.jpg" alt="Lipstick product from Berry Life Beauty" />
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Berry Life Beauty. All rights reserved.
+  </footer>
+</body>
 </html>

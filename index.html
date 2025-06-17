@@ -1,96 +1,267 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-      <title> berry life home</title>
-      <link rel="stylesheet" href="css/alteration.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Berry Life Beauty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --main-bg: #dda9f5;
+      --primary: #ca58ff;
+      --primary-dark: #a43dff;
+      --text-dark: #490468;
+      --text-hover: #c760f7;
+      --text-light: #ffffff;
+      --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 
-    </head>
-    <body>
-    <div><h1 style="color: #490468; text-align: center
-    ; font-size: 100px;">
-      Berry life beauty
-    
-    <br>
-     <br>
-     <h1 style="font-size: 25px;">"Nature inspiration is perfection"</h1>
-</h1>
-    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        <header>
-       <nav class="navbar">
+    body {
+      font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
 
-         <div class="menu" >
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutus.html">About us</a></li>
-                <li> <a href="services.html">Services</a></li>
-                <li> <a href="enquiry.html">Enquiry</a></li>
-                <li><a href="contactus.html">Contact us</a></li>
-            </ul>
-          </div>
+    h1 {
+      color: var(--text-dark);
+      text-align: center;
+      font-size: 2.5rem;
+      background-color: var(--primary);
+      border: 6px solid var(--primary-dark);
+      border-radius: 30px;
+      text-shadow: 3px 3px 5px var(--primary-dark);
+      padding: 15px;
+      margin: 30px auto;
+      width: 80%;
+    }
 
-            </nav>
-          </header>
+    nav.navbar {
+      background-color: var(--primary);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
 
-          <br>
-          <br>
-    
-    <img src="images/lipstick2.jpg" style="width: 25%; margin-left: 30px;">
-   <div style="float: right; margin-right: 60px;">
-   <p><b>What We Sell</b></p>
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
 
-       <p>At Berry Life Beauty, we offer a range of vibrant, berry-inspired beauty products designed to add<br>
-       a pop of color and a touch of nature to your beauty routine. Our collection features high-quality makeup <br>
-       essentials that will leave you looking and feeling fabulous. Here's what we offer:</p>
-      
-    <p><li><b>Blushes:</b>
-      <br>
-      Our berry-infused blushes come in a variety of shades to give your cheeks a natural, healthy flush of color.</li>
-      
-     <li><b>Eyeshadows:</b><br>
-      From rich berry tones to soft, neutral hues, our eyeshadows are perfect for creating everything from bold, dramatic looks to soft, everyday elegance.</li>
-      
-     <li><b> Lip Liners:</b><br>
-      Define and shape your lips with our creamy, berry-toned lip liners that provide precision and a lasting finish.</li>
-      
-      <li><b>Lip sticks:</b><br>
-      Our collection of berry-inspired lipsticks offers a range of textures from matte to creamy, providing a rich, long-lasting color that complements every skin tone.</li>
-      
-      <li><b>Lip Glosses:</b>
-        <br>
-      Add a glossy, berry-kissed shine to your lips with our hydrating and high-shine lip glosses that are perfect for day-to-night wear.</li></p>
-   </div>
-   <br>
-   <br>
-      <div style="float: right;"><img src="images/makeup.jpg" style="width: 350px;  margin: left 40px;"></div>
-    <br>
-    <br>
-    <br>
-    <br>
+    nav ul li a {
+      text-decoration: none;
+      color: #330249;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
 
-    <div style="float: left;"><p style="margin-left: 60px;"><b>Product info</b></p>
-     <p style="margin-left: 60px;"> Every product is formulated with love and care, 
-      bringing out the best in<br> your natural beauty while inspired by the vibrant colors
-       of fresh berries. <br>Whether you're a makeup enthusiast or a first-time user, Berry Life Beauty has something 
-       for everyone!
-      <p style="margin-left: 60px;"> <li style="margin-left: 60px;"><b>Antioxidant-Packed:</b><br>
-         Berries are known for their high antioxidant content, helping to protect the skin from free radical
-         and environmental damage.</li>
-        
-        <li  style="margin-left: 60px;"><b>Brightening & Revitalizing:</b><br>
-        The powerful pigments found in berries help brighten the skin, providing a fresh, youthful glow.</li>
-        
-       <li  style="margin-left: 60px;"><b>Cruelty-Free:</b><br> We are committed to ethical practices and never test on animals, ensuring our
-        products are kind to both you and the planet.</li>
-        
-       <li  style="margin-left: 60px;"><b>Eco-Friendly Packaging:</b><br> Our products come in recyclable and sustainable packaging,
-        because we care about our world just as much as we care about your skin.</li>
-        
-        </p>
-      </p>
+    nav ul li a:hover {
+      background-color: var(--text-hover);
+      color: var(--text-light);
+    }
+
+    .text-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .text-section p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .product-box {
+      flex: 1 1 45%;
+      background-color: #fff0fa;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+    }
+
+    .product-box h3 {
+      color: var(--text-dark);
+    }
+
+    .product-box ul {
+      padding-left: 20px;
+    }
+
+    /* Slideshow Styles */
+    .slideshow-container {
+      position: relative;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .fade {
+      animation: fade 1.5s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    footer {
+      text-align: center;
+      background-color: var(--primary);
+      color: var(--text-light);
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin-bottom: 10px;
+      }
+
+      .text-section {
+        padding: 0 15px;
+      }
+
+      .slide img {
+        max-width: 100%;
+      }
+
+      .product-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Berry Life Beauty</h1>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="text-section">
+    <p>
+      At <strong>Berry Life Beauty</strong>, we believe in the power of natural color.<br>
+      Inspired by the vibrant tones of strawberries, raspberries, and blueberries, our products are crafted to enhance every shade of beauty.
+    </p>
+    <p>
+      Whether you're after a soft glow or a bold statement, our makeup line is designed for every skin tone and every moment.
+    </p>
+  </div>
+
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="images/autumnberry shadow.jpg" alt="Berry Glow Blush">
     </div>
-  
-    
-    </body>
+    <div class="slide fade">
+      <img src="images/brightshadow.jpg" alt="Blueberry Eyeshadow Palette">
+    </div>
+    <div class="slide fade">
+      <img src="images/lipgloss berry.jpg" alt="Crimson Lipstick Collection">
+    </div>
+  </div>
+
+  <div class="text-section">
+    <h2 style="text-align: center;">What We Offer</h2>
+    <div class="product-section">
+
+      <div class="product-box">
+        <h3>What We Sell</h3>
+        <p>Our collection features luxurious, berry-toned cosmetics that blend quality and creativity:</p>
+        <ul>
+          <li>High-pigment blushes</li>
+          <li>Silky eyeshadows</li>
+          <li>Velvety lipsticks and liners</li>
+          <li>Glossy, nourishing lip glosses</li>
+        </ul>
+      </div>
+
+      <div class="product-box">
+        <h3>Our Signature Products</h3>
+        <p>Crafted with care and packed with personality, our top products include:</p>
+        <ul>
+          <li>Berry Glow Blush – for a natural, radiant flush</li>
+          <li>Midnight Blueberry Eyeshadow Palette – deep, dramatic tones</li>
+          <li>Crimson Crush Lipstick – bold, all-day wear</li>
+          <li>Berry Shine Gloss – soft, sweet shine with staying power</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Berry Life Beauty. All rights reserved.
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+  </script>
+
+</body>
 </html>
