@@ -4,74 +4,9 @@
   <meta charset="UTF-8">
   <title>Home | Berry Life Beauty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/alteration.css">
   <style>
-    :root {
-      --main-bg: #dda9f5;
-      --primary: #ca58ff;
-      --primary-dark: #a43dff;
-      --text-dark: #490468;
-      --text-hover: #c760f7;
-      --text-light: #ffffff;
-      --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
-      background-color: var(--main-bg);
-      color: var(--text-dark);
-      line-height: 1.6;
-    }
-
-    h1 {
-      color: var(--text-dark);
-      text-align: center;
-      font-size: 2.5rem;
-      background-color: var(--primary);
-      border: 6px solid var(--primary-dark);
-      border-radius: 30px;
-      text-shadow: 3px 3px 5px var(--primary-dark);
-      padding: 15px;
-      margin: 30px auto;
-      width: 80%;
-    }
-
-    nav.navbar {
-      background-color: var(--primary);
-      padding: 15px 30px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #330249;
-      font-weight: bold;
-      font-size: 1rem;
-      padding: 10px 15px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: var(--text-hover);
-      color: var(--text-light);
-    }
-
+    
     .text-section {
       max-width: 1000px;
       margin: 40px auto;
@@ -247,21 +182,7 @@
     &copy; 2025 Berry Life Beauty. All rights reserved.
   </footer>
 
-  <script>
-    let slideIndex = 0;
-    showSlides();
   
-    function showSlides() {
-      const slides = document.getElementsByClassName("slide");
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1; }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3000);
-    }<s
-  </script>
-
+  <script src="indexjs.js"></script>
 </body>
 </html>

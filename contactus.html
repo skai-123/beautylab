@@ -4,73 +4,12 @@
   <meta charset="UTF-8" />
   <title>Berry Life | Contact Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/alteration.css"></link>
   <style>
-    :root {
-      --main-bg: #dda9f5;
-      --primary: #ca58ff;
-      --primary-dark: #a43dff;
-      --text-dark: #490468;
-      --text-hover: #c760f7;
-      --text-light: #ffffff;
-      --link-hover-bg: #c760f7;
-      --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Franklin Gothic Medium', 'Arial', sans-serif;
-      background-color: var(--main-bg);
-      line-height: 1.6;
-      color: var(--text-dark);
-    }
-
-    h1 {
-      color: var(--text-dark);
-      text-align: center;
-      font-size: 2.5rem;
-      background-color: var(--primary);
-      border: 6px solid var(--primary-dark);
-      border-radius: 30px;
-      text-shadow: 3px 3px 5px var(--primary-dark);
-      padding: 15px;
-      margin: 30px auto;
-      width: 80%;
-    }
-
-    nav.navbar {
-      background-color: var(--primary);
-      padding: 15px 30px;
-      display: flex;
-      justify-content: flex-start;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #330249;
-      font-weight: bold;
-      font-size: 1rem;
-      padding: 10px 15px;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background-color: var(--link-hover-bg);
-      color: var(--text-light);
-    }
+    
+    
+    
+    
 
     .content {
       display: grid;
@@ -170,7 +109,21 @@
 
     <section class="image-section">
       <img src="images/lipstick2.jpg" alt="Lipstick product from Berry Life Beauty" />
+    </section><section class="form-section">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm" action="https://formsubmit.co/ohannahpeace193@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Contact Form Submission from Berry Life Beauty">
+        <input type="hidden" name="_captcha" value="false">
+    
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+    
+        <input type="submit" value="Send Message">
+      </form>
+      <p id="formFeedback" class="feedback"></p>
     </section>
+    
   </main>
 
   <footer>
